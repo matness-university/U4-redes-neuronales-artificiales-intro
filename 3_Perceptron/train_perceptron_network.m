@@ -1,4 +1,5 @@
 function [PERCEPTRON] = train_perceptron_network(PERCEPTRON, TRAINING_SET)
+% TRAINING_SET = [0 0 0 0; 0 0 1 1; 0 1 0 1; 0 1 1 0; 1 0 0 1; 1 0 1 0; 1 1 0 0; 1 1 1 0];
     LEARNING_RATE = 0.7;
     ERRORS = zeros(1,length(TRAINING_SET));
     TRAINING_SET_DIMENSTIONS = size(TRAINING_SET);
